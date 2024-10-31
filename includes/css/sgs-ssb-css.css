@@ -1,0 +1,119 @@
+@media all {
+    a, a:hover, a:visited {
+        text-decoration: none;
+    }
+    a, a:visited {
+        opacity: 1;
+        transition: color .25s, background .25s, opacity .25s;
+    }
+    a:active, a:focus {
+        outline: 0;
+    }
+    a, a:visited {
+        color: #0be6af;
+    }
+    a, div {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+    }
+}
+
+a, a:visited {
+    color: #000;
+}
+
+.sgsssb-social {
+    width: min-content;
+    background: transparent !important;
+    animation: 5s infinite shaker;
+    transform-origin: 50% 50%;
+}
+
+.sgsssb-social .sgsssb-link:hover {
+    opacity: 50%;
+}
+
+@media screen and (min-width: 851px) {
+    .sgsssb-social {
+        position: fixed;
+        left: 0;
+        top: 250px;
+        top: calc(50% - 250px);
+        text-align: center;
+        padding: 2px 2px 0;
+        margin: auto;
+        z-index: 999999999;
+        border: 0;
+    }
+    .sgsssb-social .sgsssb-link, .sgsssb-social .sgsssb-link:visited {
+        width: 22px;
+        height: auto;
+        line-height: 1;
+        text-align: center;
+        margin: 1.5px auto;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .sgsssb-social {
+        position: fixed;
+        bottom: 250px;
+        left: 0;
+        text-align: center;
+        padding: 2px;
+        margin: auto;
+        height: auto;
+        top: unset;
+        z-index: 999999999;
+        border: 0;
+    }
+    .sgsssb-social .sgsssb-link, .sgsssb-social .sgsssb-link:visited {
+        width: 18px;
+        height: auto;
+        line-height: 1;
+        text-align: center;
+        margin: 1.5px auto;
+        display: inline-block;
+    }
+}
+
+@media print {
+    .sgsssb-social {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 851px) {
+    .sgsssb-social .sgsssb-link, .sgsssb-social .sgsssb-link:visited {
+        width: 25px;
+    }
+    .sgsssb-social {
+        top: 190px;
+    }
+}
+
+@media screen and (max-width: 851px) {
+    .sgsssb-social .sgsssb-link, .sgsssb-social .sgsssb-link:visited {
+        width: 40px;
+    }
+    .sgsssb-social {
+        width: 100vw;
+        background: #fff !important;
+        bottom: 0;
+    }
+}
+
+@keyframes shaker {
+    0% { transform: translate(0, 0); }
+    1.78571% { transform: translate(5px, 0); }
+    3.57143% { transform: translate(0, 0); }
+    5.35714% { transform: translate(5px, 0); }
+    7.14286% { transform: translate(0, 0); }
+    8.92857% { transform: translate(5px, 0); }
+    10.71429% { transform: translate(0, 0); }
+    100% { transform: translate(0, 0); }
+}
